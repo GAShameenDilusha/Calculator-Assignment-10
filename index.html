@@ -6,6 +6,91 @@
 
 
     <style>
+        #background {
+            background-image: url("assets/img/pexels-mateusz-dach-99805-3516751.jpg");
+            width: 100%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cal {
+            width: 1014px;
+            height: 601px;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            opacity: 70%;
+        }
+
+        #clsBtn {
+            width: 100px;
+            height: 70px;
+            border-color: transparent;
+            background-color: coral;
+            color: white;
+            font-size: 30px;
+            position: relative;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        #display {
+            width: 793px;
+            height: 70px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 160px;
+            cursor: text;
+        }
+
+        #btnGrid {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            top: 150px;
+            display: grid;
+            grid-template-columns:150px 150px 150px 150px;
+            padding: 10px;
+            column-gap: 70px;
+            row-gap: 32px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #btnGrid > button {
+            width: 200px;
+            height: 70px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #btn-15{
+            background-color: darkseagreen;
+        }
+        #btn-04,#btn-08,#btn-12,#btn-16{
+            background-color: lightsalmon
+        }
+        #btnGrid > button:nth-child(n+1):nth-child(-n+14):hover{
+            background-color: mediumpurple;
+            color: white;
+        }
+        #btn-16:hover{
+            background-color: mediumpurple;
+            color: white;
+        }
+        #btn-15:hover{
+            background-color: greenyellow;
+            color: white;
+        }
 
     </style>
 
